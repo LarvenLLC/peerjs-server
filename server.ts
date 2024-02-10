@@ -29,7 +29,7 @@ app.prepare().then(() => {
   // Serve the Next.js application for all other routes
   // This handler is placed after the PeerJS middleware to ensure
   // that requests to '/peerjs' are not caught by this handler
-  server.all('*', (req: Request, res: Response) => {
-    return handle(req, res);
-  });
+  // server.all('*', (req: Request, res: Response) => {
+  //   return handle(req, res);
+  // });
 });
