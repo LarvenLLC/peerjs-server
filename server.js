@@ -27,5 +27,5 @@ app.prepare().then(() => {
     path: '',
   });
 
-  server.use('/', peerServer);
+  server.use('/peer', peerServer);
 });
